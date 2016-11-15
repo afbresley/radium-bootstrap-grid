@@ -38,17 +38,17 @@ export const container = function (forceMobile) {
     paddingRight: Math.ceil(variables.gridGutterWidth / 2)
   };
 
-  if (!forceMobile) {
-    styles[`@media (min-width: ${variables.screenSMMin}px)`] = {
-      width: variables.containerSM
-    }
-    styles[`@media (min-width: ${variables.screenMDMin}px)`] = {
-      width: variables.containerMD
-    }
-    styles[`@media (min-width: ${variables.screenLGMin}px)`] = {
-      width: variables.containerLG
-    }
-  }
+  // if (!forceMobile) {
+  //   styles[`@media (min-width: ${variables.screenSMMin}px)`] = {
+  //     width: variables.containerSM
+  //   }
+  //   styles[`@media (min-width: ${variables.screenMDMin}px)`] = {
+  //     width: variables.containerMD
+  //   }
+  //   styles[`@media (min-width: ${variables.screenLGMin}px)`] = {
+  //     width: variables.containerLG
+  //   }
+  // }
 
   return styles
 }
